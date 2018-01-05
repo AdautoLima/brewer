@@ -88,7 +88,6 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 		return conversionService;
 	}
 	
-	//Força a ficar no formato português
 	@Bean
 	public LocaleResolver localeResolver() {
 		return new FixedLocaleResolver(new Locale("pt", "BR"));
